@@ -1,0 +1,24 @@
+milestone
+id, name, due date, propertyID, actions
+
+action
+id, name, due date. propertyID, tasks
+
+task
+id, name, due date, propertyID, [userID]
+
+user
+id, first name, last name, email, phonenumber, address, role
+
+property
+id, name, address
+
+
+PK               SK           name               propertyID     actions
+---------------------------------------------------------------------------------------------------------------
+milestone-id     due date     Main Milestone A   property-23    { id: 22, name: 'Inspection', tasks: [ { id: 14, name: 'Inspector scheduled' }] }
+propertyid                    Red Sash House     property-23    
+
+getMilestones()
+
+

@@ -1,0 +1,22 @@
+{
+  "name": "whatnow-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "graphql": "^16.6.0",
+    "mocha": "^10.1.0",
+    "serverless": "^3.23.0",
+    "serverless-appsync-plugin": "^1.14.0",
+    "serverless-plugin-aws-alerts": "^1.7.5",
+    "serverless-plugin-canary-deployments": "^0.8.0",
+    "serverless-prune-versions": "^1.0.4"
+  }
+}

@@ -1,0 +1,55 @@
+type Query {
+    getMilestones(): [Milestone!]!
+}
+
+type Milestone {
+    id: ID!
+    name: String!
+    dueDate: Int!
+    propertyID: ID!
+    actions: [Action!]!
+}
+
+type Action {
+    id: ID!
+    name: String!
+    dueDate: Int!
+    tasks: [Task!]!
+}
+
+type Task {
+    id: ID!
+    name: String!
+    dueDate: Int!
+    users: [User!]!
+}
+
+type User {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    email: String!
+    phoneNumber: String!
+    address: Address!
+    role: Role!
+}
+
+type Addess {
+    address1: String!
+    address2: String!
+    city: String!
+    stateOrProvince: String!
+    zipcode: String!
+}
+
+enum Role {
+    Admin
+    Agent
+    Buyer
+}
+
+type Property {
+    id: ID!
+    name: String!
+    address: Address!
+}
